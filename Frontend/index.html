@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agri Market Price Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center;">
+      <div class="header-content">
+        <h1>🌾 Agri Market Price Predictor</h1>
+        <p>Empowering Farmers with Smart Market Forecasting</p>
+        <div class="header-stats">
+          <div class="stat-item">
+            <div class="stat-number">10,000+</div>
+            <div class="stat-label">Farmers Trust Us</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Crops Covered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">95%</div>
+            <div class="stat-label">Accuracy Rate</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Features Section -->
+      <section class="features">
+        <h2 class="section-title">Our Powerful Features</h2>
+        <div class="features-grid">
+          <div class="card" data-aos="fade-up">
+            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Live Price Trends</h3>
+            <p>Stay updated with real-time market rates of crops across India with our comprehensive database.</p>
+            <a href="#" class="card-link">Learn more →</a>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon"><i class="fas fa-cloud-sun-rain"></i></div>
+            <h3>Weather Insights</h3>
+            <p>Analyze how climate factors influence price fluctuations with our advanced weather correlation tools.</p>
+            <a href="#" class="card-link">Learn more →</a>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon"><i class="fas fa-robot"></i></div>
+            <h3>Smart Predictions</h3>
+            <p>Powered by AI/ML models trained on 10+ years of market data for accurate future market insights.</p>
+            <a href="#" class="card-link">Learn more →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Crop Lookup Section -->
+      <section class="lookup" data-aos="zoom-in-up">
+        <div class="lookup-container">
+          <div class="lookup-content">
+            <h2>🔍 Check Market Price for Your Crop</h2>
+            <p class="lookup-subtitle">Get instant access to current and predicted prices for your agricultural produce</p>
+            <form class="lookup-form">
+              <div class="form-group">
+                <label for="crop-select">Select Crop</label>
+                <select id="crop-select" class="custom-select">
+                  <option>Select Crop</option>
+                  <option>Wheat</option>
+                  <option>Rice</option>
+                  <option>Maize</option>
+                  <option>corn</option>
+                  <option>Tomato</option>
+                  <option>onion</option>
+                  <option>potato</option>
+                  <option>pumkin</option>
+                  <option>watermelon</option>
+                  <option>Soybean</option>
+                  <option>Cotton</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="region-select">Select Region</label>
+                <select id="region-select" class="custom-select">
+                  <option>Select Region</option>
+                  <option>Kundapura</option>
+                  <option>trasi</option>
+                  <option>byndoor</option>
+                  <option>shiror</option>
+                  <option>bhatkal</option>
+                  <option>chitrapur</option>
+                  <option>shirali</option>
+                  <option>murdeshwar</option>
+                  <option>honnavara</option>
+                  <option>kumta</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-primary">
+                <i class="fas fa-search"></i> Check Price
+              </button>
+            </form>
+          </div>
+          <div class="lookup-image">
+            <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Farmer checking prices">
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-container">
+          <div class="step" data-aos="fade-right">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Select Your Crop</h3>
+              <p>Choose from our extensive database of agricultural commodities</p>
+            </div>
+          </div>
+          <div class="step" data-aos="fade-right" data-aos-delay="100">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Choose Your Location</h3>
+              <p>Select your state or district for localized price information</p>
+            </div>
+          </div>
+          <div class="step" data-aos="fade-right" data-aos-delay="200">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Get Instant Insights</h3>
+              <p>Receive current prices and 30-day price predictions</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials" data-aos="fade-left">
+        <h2 class="section-title">💬 Farmer Success Stories</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+              <p>This tool helped me sell my wheat at the right time, increasing my profits by 22%. Very helpful for small farmers like me!</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/250px-Outdoors-man-portrait_%28cropped%29.jpg" alt="Kartik">
+              <div class="author-info">
+                <strong>shashank</strong>
+                <span>Farmer in Kundapura</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+              <p>The weather alerts and price forecasts saved my crops and profits during the unexpected monsoon last season.</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Swetha">
+              <div class="author-info">
+                <strong>Swetha</strong>
+                <span>Farmer in Koppla</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter" data-aos="fade-up">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h2>📬 Stay Updated with Market Trends!</h2>
+            <p>Subscribe to our weekly newsletter for the latest agricultural market insights, weather forecasts, and farming tips.</p>
+          </div>
+          <form class="newsletter-form">
+            <div class="input-group">
+              <input type="email" placeholder="Enter your email address">
+              <button type="submit" class="btn-primary">Subscribe <i class="fas fa-paper-plane"></i></button>
+            </div>
+            <div class="privacy-note">
+              <input type="checkbox" id="privacy-check">
+              <label for="privacy-check">I agree to receive emails and accept the privacy policy</label>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" data-aos="fade-up">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>📞 Have Questions? Contact Us</h2>
+            <p>Our team is here to help you make the most of your agricultural business.</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>chaitrashricn74@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 7892563273</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>College</h4>
+                  <p>moodlakatte institute of technology Kundapura </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send us a message</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="cta-container">
+          <h2>Ready to Make Smarter Farming Decisions?</h2>
+          <p>Join thousands of farmers who are already benefiting from our market insights.</p>
+          <a href="#" class="btn-primary btn-large">🚀 Launch Prediction Tool</a>
+          <div class="cta-stats">
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <span>10,000+ Happy Farmers</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-check-circle"></i>
+              <span>95% Accuracy Guarantee</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h3>🌾 Agri Market Price Predictor</h3>
+          <p>Empowering Farmers with Smart Market Forecasting</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Features</h4>
+            <a href="#">Price Trends</a>
+            <a href="#">Weather Insights</a>
+            <a href="#">Predictions</a>
+          </div>
+          <div class="link-group">
+            <h4>Resources</h4>
+            <a href="#">Blog</a>
+            <a href="#">Guides</a>
+            <a href="#">FAQ</a>
+          </div>
+          <div class="link-group">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Chaitrashri. Built with 🌿 for Farmers.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Dark mode toggle functionality
+    const toggle = document.getElementById('darkModeToggle');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+    }
+  </script>
+</body>
+</html>
